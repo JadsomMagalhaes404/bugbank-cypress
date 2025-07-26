@@ -1,0 +1,9 @@
+{
+  "btnRegistro": ".ihdmxA",
+  "campoEmail": ".card__register [name='email']",
+  "campoNome": "[name='name']",
+  "campoSenha": ".card__register [name='password']",
+  "campoConfirmSenha": ".card__register [name='passwordConfirmation']",
+  "switchSaldo": "#toggleAddBalance",
+  "btnCadastrar": ".styles__ContainerFormRegister-sc-7fhc7g-0 > .style__ContainerButton-sc-1wsixal-0"
+}
