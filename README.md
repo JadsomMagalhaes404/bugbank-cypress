@@ -1,7 +1,7 @@
 🐞 BugBank‑Cypress
 Automação de testes end‑to‑end usando Cypress para a aplicação BugBank, um banco web simples com comportamento intencionalmente instável — ideal para treinar cenários reais de teste.
 
-Funcionalidades utilizadas para a automação
+## Funcionalidades utilizadas para a automação
 Cadastro de usuário com saldo (conta digital)
 
 Geração dinâmica de dados com a biblioteca faker.js
@@ -18,7 +18,7 @@ Reutilização de comandos personalizados (Cypress.Commands.add(...))
 
 Estrutura de testes em fluxo único ou multi-iteração
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - [Cypress](https://www.cypress.io/)
 - [Faker.js](https://github.com/Marak/Faker.js/) – para geração de dados fake
@@ -27,7 +27,7 @@ Estrutura de testes em fluxo único ou multi-iteração
 
 ---
 
-## 📋 Funcionalidades Automatizadas
+## Funcionalidades Automatizadas
 
 - ✅ **Cadastro com saldo**
   - Preenchimento dinâmico de dados de usuário com `faker`
@@ -47,3 +47,10 @@ Estrutura de testes em fluxo único ou multi-iteração
   - Ambos os saldos são validados após a transação
 
 ---
+
+## Observações
+Os seletores estão centralizados no arquivo variaveis.json para facilitar a manutenção.
+
+O projeto utiliza comandos customizados em support/*.js para reutilizar lógicas como login, cadastro e transferência.
+
+Para testes mais robustos, seria interessante integrar o Cypress com CI/CD e gerar relatórios com ferramentas como Mochawesome
