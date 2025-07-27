@@ -24,11 +24,11 @@ Cypress.Commands.add('realizarLogin', (usuario) => {
 
 
   // Validação do número da conta
-    cy.get(dados.NmrConta) // ou o seletor correspondente
-    .should('be.visible')
-    .invoke('text')
-    .then((textoConta) => {
-      const contaNaTela = textoConta.match(/\d+-\d+/)?.[0]; // extrai o padrão '999-9'
-      expect(contaNaTela).to.eq(usuario.conta);
-    });
+  cy.get(dados.NmrConta) // ou o seletor correspondente
+  .should('be.visible')
+  .invoke('text')
+  .then((textoConta) => {
+    const contaNaTela = textoConta.match(/\d+-\d+/)?.[0]; // extrai o padrão '999-9'
+    expect(contaNaTela).to.eq(usuario.conta);
+  });
 });
