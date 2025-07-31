@@ -16,7 +16,8 @@ Cypress.Commands.add('realizarTransferenciaParaConta2', (usuario) => {
   .should('be.visible')
   .invoke('text')
   .then((textoSaldo) => {
-    const valorFormatado = textoSaldo.replace(/\s/g, '').trim(); // remove espaços invisíveis
+    const valorFormatado = textoSaldo.replace(/\s/g, '').trim();
+    cy.wait(3000); // remove espaços invisíveis
     expect(valorFormatado).to.include('R$500,00');
   });
 
